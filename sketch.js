@@ -36,7 +36,7 @@ function draw(){
     textSize(30);
     if(hour){
    
-    if(hour>=0){
+    if(hour>=12){
        text("Time"+hour%12+"PM",0,500);
     }  else if (hour==0){
              text("Time : 12 AM",100,100);
@@ -62,10 +62,13 @@ async function getBackgroundImg(){
     // write code slice the datetime
     hour=datetime.slice(11,13);
     console.log(hour)
-
+if(hour>03){
+    console.log("HI")
+}
     // add conditions to change the background images from sunrise to sunset
   if(hour>=04 && hour<=06){
       bg="sunrise1.png"
+      
   } else if(hour>=06 && hour<=08){
     
     bg="sunrise2.png" 
