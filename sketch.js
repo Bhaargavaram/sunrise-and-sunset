@@ -62,7 +62,7 @@ async function getBackgroundImg(){
     // write code slice the datetime
     hour=datetime.slice(11,13);
     console.log(hour)
-if(hour>03){
+if(hour>3){
     console.log("HI")
 }
     // add conditions to change the background images from sunrise to sunset
