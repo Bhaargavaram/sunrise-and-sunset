@@ -74,7 +74,7 @@ if(hour>3){
     bg="sunrise2.png" 
   }else if(hour>=23 && hour==0){
     bg="sunrise10.png"
-  }else if(hour==0 && hour<=03){
+  }else if(hour==0 || hour<=03){
     bg="sunrise11.png"
   }else {
     bg="sunset12.png"
